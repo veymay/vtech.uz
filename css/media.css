@@ -1,10 +1,25 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  body {
-    background: red;
+  .container {
+    padding: 10px;
+  }
+  .header {
+    flex-wrap: wrap;
   }
   ul.menu {
-    display: none;
+    width: 100%;
+    margin: 20px 0 0;
+    border-top: 2px solid var(--dark);
+    flex-direction: column;
+    order: 3;
+    align-items: start;
+    font-size: 24px;
+  }
+  ul.menu li {
+    width: 100%;
+  }
+  ul.menu li a {
+    gap: 15px;
   }
   .header a.btn {
     padding: 20px;
